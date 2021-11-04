@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  redis:
+    database: 0  # Redis数据库索引(默认为0)
+    host: localhost # Redis服务器地址
+    port: 6379  # Redis服务器连接端口
+    password:   # Redis服务器连接密码(默认为空)
+  jpa:
+    #database-platform: org.hibernate.dialect.My5SQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/redisDemo
+    username: redisDemo
+    password: 123456
+
+
+
